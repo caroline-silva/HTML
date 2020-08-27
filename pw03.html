@@ -1,58 +1,45 @@
-<!-- Tags de Obejtos -->
 <!doctype html>
 <html>
     <head>
-        <title>HTML5 - Tags de Objeto</title>
+        <title>
+            PW03 - Caroline
+        </title>
     </head>
 
     <body>
-        <h1>Tags de Objeto</h1>
+        <font color="red" size="35px" face="times new roman" >Contato</font><br/><br/>
+        <font><i>Seja bem vindo, preencha o <b>formulário</b> abaixo para:</i></font><br/>
+
+        <ul>
+            <li>dúvida</li>
+            <li>sugestão</li>
+            <li>crítica</li>
+            <li>Orçamento</li>
+        </ul>
+
+        <font>Caso queira ver nossos produtos, clique <a href="http://professor.norton.net.br" target="new">aqui</a></font><br/><br/>
+    
         <form method="post">
+            nome: <input type="text" id="txtNome" placeholder="digite seu nome" size="60" maxlength="55" required/><br/>
+            email: <input type="email" id="txtemail" placeholder="digite seu email" size="70" maxlength="55" required/><br/>
+            telefone: <input type="text" id="txtcep" placeholder="digite seu telefone" required pattern="[0-9] {5} - [0-9] {4}" title="digite o telefone no formato 99999-9999"/><br/><br/>
+            assunto:
+            <select> id="txtUnidade>">
+    
+                <option>Dúvidas</option>
+                <option>Sugestão</option>
+                <option>Crítica</option>
+                <option>Orçamento</option>
+            </select><br/><br/>
+            Deseja receber uma copia deste e-mail:
+                <input type="radio" id="s" name="Deseja receber uma copia deste e-mail"> Sim
+                <input type="radio" id="n" name="Deseja receber uma copia deste e-mail"> Nao
+               <br/><br/>
 
-        nome: <input type="text" id="txtNome" placeholder="nome completo" size="60" maxlength="55" required/><br/><br/>
-
-        cep: <input type="text" id="txtcep" required pattern="[0-9] {5} - [0-9] {3}" title="digite o cep no formato 99999-999"/><br/><br/>
-
-        email: <input type="email" id="txtemail" placeholder="Digite seu email" size="70" maxlength="55" required/><br/><br/>
-
-        senha: <input type="password" id="txtSenha" placeholder="Digite sua senha" required pattern="[A-Za-z0-9] {5,15}" title="senha alfanumerica de 5 a 15 caracteres" /><br/><br/>
-
-        idade: <input type="number" id="txtIdade" min="18" max="80" required/><br/><br/>
-
-        valor: <input type="number" id="txtValor" min="0" max="99999999" step="0.05" required/><br/><br/><br/>
-
-        data: <input type="date" id="txtData" min="21/08/2019" max=31/12/2021 required/><br/><br/>
-
-        hora <input type="time" id="txtHora" required /><br/><br/>
-
-        Interesses:<br/>
-         <input type="checkbox" id="ck1">Filmes<br/>
-         <input type="checkbox" id="ck2">Games<br/>
-         <input type="checkbox" id="ck3">Series<br/><br/>
-
-         Periodo: <br/>
-         <input type="radio" id="p1" name="periodo"> Manha
-         <input type="radio" id="p2" name="periodo"> Tarde
-         <input type="radio" id="p3" name="periodo"> Noite
-        <br/><br/>
-
-        Nota:
-        <input type="range" id="txtNota" min="0 max"10" step="1"/> <br/><br/>
-
-        Unidade:
-        <select id="txtUnidade>">
-
-            <option>Fatec Ipirnaga</option>
-            <option>Fatec Sao caetano</option>
-            <option>Fatec Ourinhos</option>
-
-        </select><br/><br/>
-
-        Mensagem:<br/>
-        <textarea id="txtMsg" cols="40" rows="5"></textarea><br/>
- 
-        <button id="bt1">Enviar</button>
-    </form>
-
+            Mensagem:<br/>
+               <textarea id="txtMsg" placeholder="digite sua mensagem" cols="40" rows="2"></textarea><br/>
+        
+             <button id="bt1">Enviar</button>  
+        </form>
     </body>
 </html>
